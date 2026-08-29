@@ -12,6 +12,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Using custom Composite Action -> Cache dependencies
         uses: ./.github/actions/cache-dependency
+        with:
+          caching: true
       - name: Lint code
         run: npm run lint
   test:
