@@ -10,13 +10,13 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v6
-      # - name: Using custom Composite Action -> Cache dependencies
-      #   id: cache-deps
-      #   uses: ./.github/actions/cache-dependency
-      #   with:
-      #     caching: false
-      # - name: Output information
-      #   run: echo "cache used? ${{ steps.cache-deps.outputs.used-cache }}"
+      - name: Using custom Composite Action -> Cache dependencies
+        id: cache-deps
+        uses: ./.github/actions/cache-dependency
+        with:
+          caching: false
+      - name: Output information
+        run: echo "cache used? ${{ steps.cache-deps.outputs.used-cache }}"
       - name: Lint code
         run: npm run lint
   test:
