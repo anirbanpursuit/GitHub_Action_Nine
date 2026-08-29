@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
       - name: Using custom Composite Action -> Cache dependencies
         id: cache-deps
         uses: ./.github/actions/cache-dependency
@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
       - name: Using custom Composite Action -> Cache dependencies
         id: cache-deps
         uses: ./.github/actions/cache-dependency
@@ -43,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
       - name: Using custom Composite Action -> Cache dependencies
         id: cache-deps
         uses: ./.github/actions/cache-dependency
@@ -61,7 +61,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
       - name: Get build artifacts
         uses: actions/download-artifact@v6
         with:
@@ -75,6 +75,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
       - name: Check connection with JS Custom action
         uses: ./.github/actions/javascriptAction
