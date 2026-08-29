@@ -71,3 +71,8 @@ jobs:
         run: ls
       - name: Deploy site
         run: echo "Deploying..."
+  jsCustomAction:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check connection with JS Custom action
+        uses: ./.github/actions/javascriptAction
