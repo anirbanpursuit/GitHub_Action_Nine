@@ -13,7 +13,7 @@ jobs:
       - name: Using custom Composite Action -> Cache dependencies
         uses: ./.github/actions/cache-dependency
         with:
-          caching: true
+          caching: false
       - name: Lint code
         run: npm run lint
   test:
