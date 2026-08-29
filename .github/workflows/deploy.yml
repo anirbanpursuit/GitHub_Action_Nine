@@ -74,5 +74,7 @@ jobs:
   jsCustomAction:
     runs-on: ubuntu-latest
     steps:
+      - name: Get code
+        uses: actions/checkout@v3
       - name: Check connection with JS Custom action
         uses: ./.github/actions/javascriptAction
