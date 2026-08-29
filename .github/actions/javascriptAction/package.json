@@ -10,7 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "@actions/core": "^2.0.3",
-    "@actions/exec": "^3.0.0",
-    "@actions/github": "^9.1.1"
+    "@actions/exec": "^2.0.0",
+    "@actions/github": "^9.1.1",
+    "@actions/io": "^2.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.45.0"
   }
 }
